@@ -1,0 +1,27 @@
+# Terminal emulator
+set $term alacritty
+
+# Science
+set $neuroimaging MRIcroGL
+set $Neuroimaging GDK_BACKEND=x11 fsleyes
+
+# Internet
+set $downloads transmission-gtk
+set $web firefox || firefox-bin
+
+# Graphics
+set $modelling blender
+set $graphic gimp
+set $paths inkscape
+
+# Messaging
+set $im telegram-desktop
+set $lab-im slack
+
+# Screen capture
+# For some reason these don't work with aliased commands from `.bashrc`:
+set $screenpic grim $(date +"Pictures/${HOSTNAME}_%Y-%m-%dT%H:%M:%S.png")
+set $screenpic-select grim -g "$(slurp)" $(date +"Pictures/${HOSTNAME}_%Y-%m-%dT%H:%M:%S.png")
+set $screenvid wf-recorder -a -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -t
+set $screenvid-select wf-recorder -a -g "$(slurp)" -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -t
+set $screenvid-kill killall wf-recorder --signal SIGINT

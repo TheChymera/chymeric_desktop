@@ -1,0 +1,358 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: 'Droid Sans Mono', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #000000;
+    color: #a3a3a3;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+#workspaces button {
+    padding: 0 5 0 4px;
+    border-top: 2px solid #000000;
+    border-bottom: 0px;
+    background-color: transparent;
+    color: #a3a3a3;
+    /* Use box-shadow instead of border so the text isn't offset */
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -2px #a3a3a3;
+}
+
+#workspaces button.focused {
+    border-top: 2px solid #a3a3a3;
+    background-color: #606060;
+    color: #dddddd;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 3px;
+    margin: 0 3px;
+    color: #ffffff;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    margin-left: 0px;
+    padding-left: 2px;
+    border-top: 2px solid #000000;
+    background-color: #000000;
+    color: #dddddd;
+    border-bottom: 1px solid #000000;
+}
+
+#battery {
+    padding: 0 5 0 4px;
+    border-top: 2px solid #000000;
+    border-bottom: 0px;
+    background-color: transparent;
+    color: #a3a3a3;
+    background-color: #000000;
+}
+
+#battery.charging {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    border-top: 1px solid #066626;
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 22px;
+    margin: 0 3px;
+    padding: 0 3px;
+    border-bottom: 0px solid #000000;
+}
+#cpu.negligible {
+    border-top: 1px solid #064505;
+}
+#cpu.lowest {
+    border-top: 1px solid #065010;
+}
+#cpu.low {
+    border-top: 1px solid #066020;
+}
+#cpu.moderate {
+    border-top: 1px solid #067030;
+}
+#cpu.high {
+    border-top: 1px solid #068036;
+}
+#cpu.higher {
+    border-top: 1px solid #069040;
+}
+#cpu.warning {
+    border-top: 1px solid #06a046;
+}
+#cpu.critical {
+    border-top: 1px solid #06b050;
+}
+
+#memory {
+    border-top: 1px solid #662696;
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 22px;
+    margin: 0 3px;
+    padding: 0 3px;
+    border-bottom: 0px solid #000000;
+}
+#memory.negligible {
+    border-top: 1px solid #501080;
+}
+#memory.lowest {
+    border-top: 1px solid #581888;
+}
+#memory.low {
+    border-top: 1px solid #602090;
+}
+#memory.moderate {
+    border-top: 1px solid #682898;
+}
+#memory.high {
+    border-top: 1px solid #7030a0;
+}
+#memory.higher {
+    border-top: 1px solid #7838a8;
+}
+#memory.warning {
+    border-top: 1px solid #8040b0;
+}
+#memory.critical {
+    border-top: 1px solid #a070e0;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+#network {
+    background-color: #2980b9;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    border-top: 1px solid #000000;
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 24px;
+    margin: 0 3px;
+    padding: 0 3px;
+    border-bottom: 0px solid #000000;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#custom-events {
+    margin-left: 0px;
+    padding-left: 2px;
+    border-top: 2px solid #000000;
+    background-color: #000000;
+    color: #a3a3a3;
+    border-bottom: 1px solid #000000;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#custom-weather {
+    background-color: #000000;
+    margin: 0 4px;
+    padding: 0 3px;
+}
+
+#custom-weather.Fog {
+    border-top: 1px solid #606060;
+    background-color: #000000;
+}
+#custom-weather.Clear {
+    border-top: 1px solid #0040d0;
+    background-color: #000000;
+}
+#custom-weather.Sunny {
+    border-top: 1px solid #959505;
+    background-color: #000000;
+}
+#custom-weather.Partly {
+    border-top: 1px solid #6565a0;
+    background-color: #000000;
+}
+#custom-weather.Thunderstorm {
+    border-top: 1px solid #404090;
+    background-color: #000000;
+}
+#custom-weather.Mist {
+    border-top: 2px solid #808090;
+    background-color: #000000;
+}
+#custom-weather.Overcast {
+    border-top: 2px solid #6a6a6a;
+    background-color: #000000;
+}
+
+#temperature {
+    border-top: 1px solid #636363;
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 22px;
+    margin: 0 3px;
+    padding: 0 3px;
+    border-bottom: 0px solid #000000;
+}
+#temperature.critical {
+    border-top: 1px solid #ff2020;
+    background-color: #000000;
+    color: #a5a2a2;
+}
+
+#tray {
+    background-color: #2980b9;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 80px;
+}
+
+#mpd.disconnected {
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 50px;
+}
+
+#mpd.stopped {
+    border-top: 1px solid #a02005;
+    background-color: #000000;
+    color: #a3a3a3;
+    min-width: 80px;
+}
+
+#mpd.paused {
+    background-color: #000000;
+    color: #939393;
+    min-width: 80px;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 0px;
+    min-width: 16px;
+}

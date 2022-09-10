@@ -1,0 +1,16 @@
+#### My default apps
+# screen sharing in firefox:
+# https://wiki.gentoo.org/wiki/PipeWire#USE_flags
+# exec gentoo-pipewire-launcher
+# bluetooth peripheral play/pause key support:
+exec mpris-proxy
+exec dbus-launch
+# disk auto-mounting
+exec udiskie
+#exec redshift
+exec wlsunset -l 43.7 -L -72.2 -t 3800 -T 6200 -d 5400 & disown
+exec mako
+exec ~/.config/sway/record_dbus_address.sh
+#exec autossh -M 0 mediahost
+#exec mpv http://localhost:8002/mpd.ogg
+

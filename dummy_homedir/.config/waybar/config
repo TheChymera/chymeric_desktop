@@ -1,0 +1,228 @@
+{
+	// see defaults in /etc/xdg/waybar/config/
+	// "layer": "top", // Waybar at top layer
+	// "position": "bottom", // Waybar position (top|bottom|left|right)
+	"height": 25, // Waybar height (to be removed for auto height)
+	// "width": 1280, // Waybar width
+	// Choose the order of the modules
+	"modules-left": [
+		"battery",
+		"sway/workspaces",
+		"sway/mode",
+		],
+	"modules-center": ["sway/window"],
+	//"modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "custom/weather", "battery", "battery#bat2", "clock", "tray"],
+	"modules-right": [
+		"mpd",
+		"pulseaudio",
+		"temperature",
+		"cpu",
+		"memory",
+		"custom/weather",
+		"custom/events",
+	],
+	// Modules configuration
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{icon}",
+		"format-icons": {
+			// "1": "",
+			// "2": "",
+			// "2": "",
+			"1": "",
+			// "2": "",
+			// "2": "",
+			// "2": "",
+			"2": "",
+			"3": "",
+			"4": "4",
+			"5": "5",
+			"6": "6",
+			"7": "7",
+			"8": "8",
+			"9": "",
+			"10": "",
+			"urgent": "",
+			"focused": "",
+			"default": ""
+			// "1": "",
+		}
+	},
+	"sway/mode": {
+		"format": "<span style=\"italic\">{}</span>"
+	},
+	"sway/window": {
+	"max-length": 80,
+	},
+	// more customization https://awesomeopensource.com/project/chubin/wttr.in
+	"custom/weather": {
+	"exec": "waybar-tooltip-weather",
+		"format": "{}",
+	"return-type": "json",
+	"interval": 300,
+	"tooltip": "true",
+	},
+	"mpd": {
+		"format": "{stateIcon} {title}",
+		"format-disconnected": "",
+		"format-stopped": "Stopped",
+		"unknown-tag": "N/A",
+		"interval": 2,
+	"max-length": 35,
+		"consume-icons": {
+			"on": " "
+		},
+		"random-icons": {
+			"off": "<span color=\"#f53c3c\"></span> ",
+			"on": " "
+		},
+		"repeat-icons": {
+			"on": " "
+		},
+		"single-icons": {
+			"on": "1 "
+		},
+		"state-icons": {
+			"paused": "",
+			"playing": ""
+		},
+		"tooltip-format": "MPD (connected)",
+		"tooltip-format-disconnected": "MPD (disconnected)",
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
+	},
+	"tray": {
+		// "icon-size": 21,
+		"spacing": 10
+	},
+	"clock": {
+		// "timezone": "America/New_York",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"tooltip": false,
+		"format": "{:%Y-%m-%d %a %H:%M}",
+		"on-click": "alacritty --class pulsemixer_float -e sh -c \"khal interactive\""
+	},
+	"custom/events": {
+		"format": "{} ",
+		"tooltip": true,
+		"interval": 120,
+		"format-icons": {
+			"default": ""
+		},
+		"exec": "waybar-tooltip-khal.py",
+		"on-click": "alacritty --class khal_float -e sh -c \"ikhal\"",
+		"return-type": "json"
+	},
+	"cpu": {
+		//"format": "{usage}% ",
+		"format": "{usage}",
+		"tooltip": true,
+	"interval": 15,
+		"states": {
+			 "negligible": 0,
+			 "lowest": 15,
+			 "low": 30,
+			 "moderate": 45,
+			 "high": 60,
+			 "higher": 75,
+			 "warning": 85,
+			 "critical": 95
+		}
+	},
+	"memory": {
+		//"format": "{}% ",
+		"format": "{}",
+		"tooltip": true,
+	"interval": 15,
+		"states": {
+			 "negligible": 0,
+			 "lowest": 15,
+			 "low": 30,
+			 "moderate": 45,
+			 "high": 60,
+			 "higher": 75,
+			 "warning": 85,
+			 "critical": 95
+		}
+	},
+	"temperature": {
+		// "thermal-zone": 2,
+		"hwmon-path": "/sys/class/hwmon/hwmon1/temp2_input",
+		"tooltip": true,
+		"critical-threshold": 75,
+		// "format-critical": "{temperatureC}°C {icon}",
+		"format": "{temperatureC}",
+		//"format": "{temperatureC}°C {icon}",
+		"format-icons": ["", "", ""]
+	},
+	"backlight": {
+		// "device": "acpi_video1",
+		"format": "{percent}% {icon}",
+		"format-icons": ["", ""]
+	},
+	"battery": {
+		// "bat": "hid-dc:2c:26:26:c8:03-battery",
+		"bat": "BAT0",
+		"adapter": "AC0",
+		"interval": 45,
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity} {icon}",
+		"format-charging": "{capacity}% ",
+		// "format-plugged": "{capacity}% ",
+		"format-plugged": "",
+		"format-alt": "{time} {icon}",
+		// "format-good": "", // An empty format will hide the module
+		// "format-full": "",
+		"format-icons": ["", "", "", "", ""]
+	},
+	"battery#bat2": {
+		"bat": "BAT2"
+	},
+	"network": {
+		// "interface": "wlp2*", // (Optional) To force the use of this interface
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ⚠",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"pulseaudio": {
+		// "scroll-step": 1, // %, can be a float
+		"format": "{volume}% {icon}",
+		//"format-bluetooth": "{volume}% {icon}",
+		//"format-bluetooth-muted": " {icon}",
+		"format-muted": " {format_source}",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", "", ""]
+		},
+		"on-click": "pavucontrol"
+	},
+	"custom/media": {
+		"format": "{icon} {}",
+		"return-type": "json",
+		"max-length": 40,
+		"format-icons": {
+			"spotify": "",
+			"default": "🎜"
+		},
+		"escape": true,
+		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+		// "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+	}
+}

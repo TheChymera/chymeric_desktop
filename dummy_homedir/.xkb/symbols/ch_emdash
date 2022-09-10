@@ -1,0 +1,6 @@
+default partial alphanumeric_keys
+xkb_symbols "myCH" {
+	include "ch(de_nodeadkeys)"
+	name[Group1] = "German (Switzerland)";
+	key <AB08> { [ comma, semicolon, emdash, endash ] };
+};

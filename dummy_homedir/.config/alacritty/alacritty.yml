@@ -1,0 +1,45 @@
+colors:
+  primary:
+    background: '0xeeeae5'
+    foreground: '0x333333'
+
+  # Normal colors
+  normal:
+    black:    '0xfbf1c7'
+    red:    '0xcc241d'
+    green:    '0x98971a'
+    yellow:    '0xd79921'
+    blue:    '0x458588'
+    magenta:  '0xb16286'
+    cyan:    '0x689d6a'
+    white:    '0x7c6f64'
+
+  # Bright colors
+  bright:
+    black:    '0x928374'
+    red:    '0xbb1122'
+    green:    '0x559908'
+    yellow:    '0xb57614'
+    blue:    '0x076678'
+    magenta:  '0x8f3f71'
+    cyan:    '0x427b58'
+    white:    '0x3c3836'
+
+window:
+  padding:
+    x: 5
+    y: 5
+
+key_bindings:
+  - { key: 2, mods: Control | Shift, action: IncreaseFontSize }
+  #- { key: 46,       mods: Shift|Control,         action: Copy,           }
+  #- { key: 47,       mods: Shift|Control,         action: Paste,           }
+
+#someone told me to put this here instead of in .bashrc but if fucked up my colors for e.g. `eix` output
+#env:
+#  TERM: xterm-256color
+#font:
+#  normal:
+#    family: JetBrains Mono NL
+#    #family: Hermit
+#    style: medium, regular

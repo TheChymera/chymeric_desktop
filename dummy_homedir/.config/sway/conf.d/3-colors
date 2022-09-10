@@ -1,0 +1,18 @@
+set $fborder_color #999999
+set $uborder_color #000000
+
+# This is the color indicating where a new window will open:
+set $ind_color #777777
+
+set $bartext_color $fborder_color
+set $barhighlight_color #000000
+set $urborder_color #aa1111
+set $bar_color $uborder_color
+set $whatever_color #00ff00
+
+
+#			background	border		text		indicator
+client.focused		$fborder_color	$fborder_color	$uborder_color	$ind_color
+client.focused_inactive $whatever_color	$uborder_color	$whatever_color $uborder_color
+client.unfocused 	$uborder_color	$uborder_color	$barhighlight_color $uborder_color
+client.urgent		$whatever_color	$urborder_color	$whatever_color $urborder_color

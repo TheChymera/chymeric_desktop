@@ -1,0 +1,4 @@
+# Rules for windows
+for_window [app_id="pulsemixer_float"] floating enable
+for_window [app_id="khal_float"] floating enable
+for_window [app_id="quick_command"] floating enable
