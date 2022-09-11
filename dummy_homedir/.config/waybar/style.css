@@ -279,7 +279,7 @@ label:focus {
     border-top: 1px solid #959505;
     background-color: #000000;
 }
-#custom-weather.Partly {
+#custom-weather.Partlycloudy {
     border-top: 1px solid #6565a0;
     background-color: #000000;
 }
@@ -288,7 +288,7 @@ label:focus {
     background-color: #000000;
 }
 #custom-weather.Mist {
-    border-top: 2px solid #808090;
+    border-top: 2px solid #008090;
     background-color: #000000;
 }
 #custom-weather.Overcast {
