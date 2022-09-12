@@ -182,6 +182,7 @@
 		"format-charging": "{capacity}% ",
 		// "format-plugged": "{capacity}% ",
 		"format-plugged": "",
+		"format-not-charging": "",
 		"format-alt": "{time} {icon}",
 		// "format-good": "", // An empty format will hide the module
 		"format-full": "",
