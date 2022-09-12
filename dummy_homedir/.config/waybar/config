@@ -182,11 +182,11 @@
 		"format-charging": "{capacity}% ",
 		// "format-plugged": "{capacity}% ",
 		"format-plugged": "",
-		"format-not-charging": "",
 		"format-alt": "{time} {icon}",
-		// "format-good": "", // An empty format will hide the module
+		"format-icons": ["", "", "", "", ""],
+		// The following sometimes is registered as the status when fully charged, setting it to be identical with full.
+		"format-not-charging": "",
 		"format-full": "",
-		"format-icons": ["", "", "", "", ""]
 	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
