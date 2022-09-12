@@ -7,8 +7,6 @@ input * {
 	xkb_layout "ch_emdash,ru,ch"
 	xkb_options "grp:win_space_toggle,compose:prsc"
 }
-default_border pixel 4
-smart_borders on
 
 ### Input configuration
 #

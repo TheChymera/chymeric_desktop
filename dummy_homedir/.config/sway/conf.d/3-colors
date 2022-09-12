@@ -2,17 +2,27 @@ set $fborder_color #999999
 set $uborder_color #000000
 
 # This is the color indicating where a new window will open:
-set $ind_color #777777
+#set $ind_color #777777
+# It's difficult to make this visible without clashing with the overall consistency of the desktop... so we just don't use it for now:
+set $ind_color $fborder_color
 
 set $bartext_color $fborder_color
 set $barhighlight_color #000000
 set $urborder_color #aa1111
 set $bar_color $uborder_color
-set $whatever_color #00ff00
+set $debug_color #00ff00
 
 
-#			background	border		text		indicator
-client.focused		$fborder_color	$fborder_color	$uborder_color	$ind_color
-client.focused_inactive $whatever_color	$uborder_color	$whatever_color $uborder_color
-client.unfocused 	$uborder_color	$uborder_color	$barhighlight_color $uborder_color
-client.urgent		$whatever_color	$urborder_color	$whatever_color $urborder_color
+#			background	border		text			indicator
+client.focused		$fborder_color	$fborder_color	$uborder_color		$ind_color
+client.focused_inactive $debug_color	$uborder_color	$debug_color		$uborder_color
+client.unfocused 	$uborder_color	$uborder_color	$barhighlight_color 	$uborder_color
+client.urgent		$debug_color	$urborder_color	$debug_color		$urborder_color
+
+default_border pixel 4
+smart_borders on
+# Can't seem to be able to use these to aling the top borders in order for active windows to not look “higher”.
+#smart_gaps inverse_outer
+#gaps outer 4
+#gaps top -4
+#gaps top -50
