@@ -38,7 +38,7 @@ window#waybar.chromium {
 
 #workspaces button {
     padding: 0 5 0 4px;
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
     border-bottom: 0px;
     background-color: transparent;
     color: #a3a3a3;
@@ -52,7 +52,7 @@ window#waybar.chromium {
 }
 
 #workspaces button.focused {
-    border-top: 2px solid #a3a3a3;
+    border-top: 1px solid #a3a3a3;
     background-color: #606060;
     color: #dddddd;
 }
@@ -119,7 +119,7 @@ window#waybar.chromium {
 
 #battery.charging {
     color: #ffffff;
-    background-color: #26A65B;
+    border-top: 1px solid #26A65B;
 }
 
 @keyframes blink {
@@ -288,11 +288,11 @@ label:focus {
     background-color: #000000;
 }
 #custom-weather.Mist {
-    border-top: 2px solid #008090;
+    border-top: 1px solid #008090;
     background-color: #000000;
 }
 #custom-weather.Overcast {
-    border-top: 2px solid #6a6a6a;
+    border-top: 1px solid #6a6a6a;
     background-color: #000000;
 }
 
