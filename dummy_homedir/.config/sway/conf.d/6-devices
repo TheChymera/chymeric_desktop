@@ -38,7 +38,14 @@ input * {
 
 #output 'Hewlett Packard LA2405 CN410703B4' transform 270
 
+# Main monitors
+# All monitor positions need to be explicit for any of them to be applied.
+output eDP-1 position 0 0
+
 # My peripheral monitors:
-output 'Unknown 16T2W AQCLC9A000672' position 0 0
-# this seems more reasonable with respect to positioning, but the numbers don't seem to do anything...
-#output 'Unknown 16T2W AQCLC9A000672' position 0 1920
+	# Portable
+	output 'Unknown 16T2W AQCLC9A000672' position 0 0
+	# Office
+	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
+	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
+	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
