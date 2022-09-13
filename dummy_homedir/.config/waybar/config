@@ -1,4 +1,6 @@
 {
+	// list of primary monitors
+	"output": ["eDP-1","DP-1"],
 	// see defaults in /etc/xdg/waybar/config/
 	// "layer": "top", // Waybar at top layer
 	// "position": "bottom", // Waybar position (top|bottom|left|right)
