@@ -30,10 +30,9 @@ bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. 
 
 
 # Workspaces
-# Note: workspaces can have any name you want, not just numbers.
-# We just use 1-10 as the default.
+# To obtain codes for special keys, consult `xev` or `wev` to get e.g. 0xa7 for “§” on CH_de
 	# Switch to workspace
-	bindsym $mod+0 workspace 0
+	bindsym $mod+0xa7 workspace 0
 	bindsym $mod+1 workspace 1
 	bindsym $mod+2 workspace 2
 	bindsym $mod+3 workspace 3
@@ -50,7 +49,7 @@ bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. 
 	bindsym shift+tab workspace next
 
 	# Move focused container to workspace
-	bindsym $mod+Shift+0 move container to workspace 0
+	bindsym $mod+Shift+0xa7 move container to workspace 0
 	bindsym $mod+Shift+1 move container to workspace 1
 	bindsym $mod+Shift+2 move container to workspace 2
 	bindsym $mod+Shift+3 move container to workspace 3
