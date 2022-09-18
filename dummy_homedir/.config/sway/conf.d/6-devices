@@ -7,7 +7,8 @@ input * {
 	xkb_layout "ch_emdash,ru,ch"
 	xkb_options "grp:win_space_toggle,compose:prsc"
 	# Edit this to change scroll speed:
-	scroll_factor 0.7
+	scroll_factor 0.66
+	#scroll_factor 0.05
 }
 
 ### Input configuration
