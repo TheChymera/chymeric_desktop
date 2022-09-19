@@ -1,6 +1,17 @@
+# keycodes to use in layout file: https://www.charvolant.org/doug/xkb/html/img3.png
+# character codes from here: https://www.fileformat.info/info/unicode/char/017f/index.htm (use UTF-16), unicode syntax is Uxxxx.
 default partial alphanumeric_keys
 xkb_symbols "myCH" {
 	include "ch(de_nodeadkeys)"
 	name[Group1] = "German (Switzerland)";
 	key <AB08> { [ comma, semicolon, emdash, endash ] };
+	key <TLDE> { [ U00A7, degree, U017F, negate ] };
+	# Umlaut et al.:
+	key <AD11> { [ U00FC, U00DC, U005B, U00E2 ] }; #  üÜ [â
+	key <AD12> { [ U0103, U0021, U005D, U0102 ] }; #  ă! ]Ă
+	key <AC10> { [ U00F6, U00D6, U00EE, U00CE ] }; #  öÖ îÎ
+	key <AC11> { [ U00E4, U00C4, U007B, U00E0 ] }; #  äÄ {à
+	key <AC12> { [ U0024, U20AC, U007D, U00E8 ] }; #  $€ }è
+	key <AB09> { [ U002E, U003A, U22C5, U00E9 ] }; #  .: ⋅é
+	key <AB10> { [ U002D, U005F, U0219, U0218 ] }; #  -_ șȘ
 };
