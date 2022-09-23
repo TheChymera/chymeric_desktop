@@ -31,6 +31,9 @@ bindsym $mod+Ctrl+Shift+s exec $screenvid
 bindsym $mod+Ctrl+s exec $screenvid-select
 bindsym $mod+Ctrl+x exec $screenvid-kill
 
+# Idling
+bindsym $mod+l exec swaylock
+
 # Media
 bindsym $mod+y exec $term --class pulsemixer_float -e sh -c "pulsemixer"
 bindsym $mod+Shift+m exec $term -e sh -c "ncmpcpp;sh"
