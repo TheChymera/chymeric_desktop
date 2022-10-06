@@ -46,7 +46,8 @@ bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. 
 	bindsym $mod+F1 workspace 11-web
 	bindsym $mod+F2 workspace 12-mail
 	bindsym $mod+F3 workspace 13-chat
-	bindsym $mod+F4 workspace 14-media
+	bindsym $mod+F4 workspace 14-chat
+	bindsym $mod+F5 workspace 15-media
 	bindsym ctrl+alt+left workspace prev
 	bindsym ctrl+alt+right workspace next
 	bindsym shift+tab workspace next
@@ -66,7 +67,8 @@ bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. 
 	bindsym $mod+Ctrl+F1 move container to workspace 11-web
 	bindsym $mod+Ctrl+F2 move container to workspace 12-mail
 	bindsym $mod+Ctrl+F3 move container to workspace 13-chat
-	bindsym $mod+Ctrl+F4 move container to workspace 14-media
+	bindsym $mod+Ctrl+F4 move container to workspace 14-chat
+	bindsym $mod+Ctrl+F5 move container to workspace 15-media
 
 
 # Layout stuff:
