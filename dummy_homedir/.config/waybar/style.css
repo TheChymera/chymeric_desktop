@@ -287,8 +287,12 @@ label:focus {
     border-top: 1px solid #404090;
     background-color: #000000;
 }
+#custom-weather.Lightrain {
+    border-top: 1px solid #304585;
+    background-color: #000000;
+}
 #custom-weather.Mist {
-    border-top: 1px solid #008090;
+    border-top: 1px solid #403540;
     background-color: #000000;
 }
 #custom-weather.Overcast {
