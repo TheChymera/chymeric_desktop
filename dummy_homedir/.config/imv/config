@@ -1,0 +1,79 @@
+# Default config for imv
+
+[options]
+
+# Suppress built-in key bindings, and specify them explicitly in this
+# config file.
+suppress_default_binds = true
+
+[aliases]
+# Define aliases here. Any arguments passed to an alias are appended to the
+# command.
+# alias = command to run
+# This needs `sys-fs/tmsu`
+tag = exec tmsu tag "$imv_current_file"
+untag = exec tmsu untag "$imv_current_file"
+
+[binds]
+# Define some key bindings
+q = quit
+y = exec echo working!
+
+# Image navigation
+<Left> = prev
+<bracketleft> = prev
+<Right> = next
+<bracketright> = next
+gg = goto 0
+<Shift+G> = goto -1
+
+# Panning
+j = pan 0 -50
+k = pan 0 50
+h = pan 50 0
+l = pan -50 0
+
+# Zooming
+<Up> = zoom 1
+<Shift+plus> = zoom 1
+i = zoom 1
+<Down> = zoom -1
+<minus> = zoom -1
+o = zoom -1
+
+# Other commands
+x = close
+f = fullscreen
+d = overlay
+c = center
+s = scaling next
+<Shift+S> = upscaling next
+a = zoom actual
+r = reset
+
+# Gif playback
+<period> = next_frame
+<space> = toggle_playing
+
+# Slideshow control
+z = slideshow +1
+<Shift+Z> = slideshow -1
+
+## My extras
+#bind delete exec rm $imv_current_file
+#<delete> = exec rm $imv_current_file
+#<delete> = rm $imv_current_file
+#<Shift+D> = rm $imv_current_file
+<Delete> = exec rm "$imv_current_file"; exec imv-msg $imv_pid next
+# Works but does not switch to next image
+#<Shift+D> = exec rm $imv_current_file
+#<Shift+D> = exec rm $imv_current_file && goto +1
+#<Shift+D> = exec rm $imv_current_file; exec imv-msg $imv_pid next
+p = exec wl-copy "${imv_current_file}" & ; exec disown
+<Shift+P> = exec echo $imv_current_file
+#<Shift+D> = exec rm "$imv_current_file"; exec imv-msg $imv_pid next
+#t = exec tmsu tag "$imv_current_file" "${@}"
+#t = exec sleep 1 && echo "hehe ${@}"
+t = exec tmsu tags "$imv_current_file"
+#t = exec "read TAGS; echo \"${TAGS}\""
+#t = alacritty; read TAGS; exec tmsu tag "${imv_current_file}" ${TAGS}
