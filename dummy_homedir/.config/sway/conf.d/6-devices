@@ -47,6 +47,8 @@ output eDP-1 position 0 0
 # My peripheral monitors:
 	# Portable
 	output 'Unknown 16T2W AQCLC9A000672' position 0 0
+	# DPBS lecture hall
+	output 'Unknown Crestron 0x00000000' res 1920x1200
 	# Office
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
