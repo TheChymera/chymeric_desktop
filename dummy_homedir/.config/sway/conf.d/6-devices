@@ -29,8 +29,6 @@ input * {
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-## output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -53,3 +51,9 @@ output eDP-1 position 0 0
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
+
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
+
+#output * bg #111155 solid_color
+
