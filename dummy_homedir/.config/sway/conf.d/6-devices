@@ -59,6 +59,7 @@ output eDP-1 position 0 0
 #output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1881.png fill
 #output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-shipping_along_the_crimean_coast_1872.png fill
 #output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-crimean_coast_in_moonlight_1859.png fill
+#output * bg ~/datasrc/wallpaper-art/original/henri-paul_motte—cardinal_richelieu_at_the_siege_of_la_rochelle.png fill
 output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
 #output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
 
