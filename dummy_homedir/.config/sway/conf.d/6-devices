@@ -42,6 +42,17 @@ input * {
 # All monitor positions need to be explicit for any of them to be applied.
 output eDP-1 position 0 0
 
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-the_dark_wood_1876.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-haystacks_preobrazhenskoe_1890.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1881.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-shipping_along_the_crimean_coast_1872.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-crimean_coast_in_moonlight_1859.png fill
+output * bg ~/datasrc/wallpaper-art/original/thomas_moran—gran_canal_venice_1905.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
+#output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
+#output * bg ~/datasrc/wallpaper-art/original/henri-paul_motte—cardinal_richelieu_at_the_siege_of_la_rochelle.png fill
 # My peripheral monitors:
 	# Portable
 	output 'Unknown 16T2W AQCLC9A000672' position 0 0
@@ -51,17 +62,8 @@ output eDP-1 position 0 0
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
+	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1876.png fill
 
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-the_dark_wood_1876.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-haystacks_preobrazhenskoe_1890.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1881.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-shipping_along_the_crimean_coast_1872.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-crimean_coast_in_moonlight_1859.png fill
-#output * bg ~/datasrc/wallpaper-art/original/henri-paul_motte—cardinal_richelieu_at_the_siege_of_la_rochelle.png fill
-output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
-#output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
 
 #output * bg #111155 solid_color
 
