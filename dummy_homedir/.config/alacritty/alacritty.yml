@@ -26,6 +26,7 @@ colors:
     white:    '0x3c3836'
 
 window:
+  #opacity: 0.75
   padding:
     x: 5
     y: 5
