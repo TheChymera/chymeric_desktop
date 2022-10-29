@@ -53,7 +53,14 @@ output eDP-1 position 0 0
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-the_dark_wood_1876.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-haystacks_preobrazhenskoe_1890.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1881.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-shipping_along_the_crimean_coast_1872.png fill
+#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-crimean_coast_in_moonlight_1859.png fill
+output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
+#output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
 
 #output * bg #111155 solid_color
 
