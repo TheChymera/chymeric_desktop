@@ -62,7 +62,9 @@ output * bg ~/datasrc/wallpaper-art/original/thomas_moran—gran_canal_venice_19
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
+	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/thomas_moran—grand_canyon_of_the_yellowstone_c1900.png fill
 	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1876.png fill
+	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/caspar_david_friedrich-ships_in_the_harbour_of_greifswald_c1819.png fill
 
 
 #output * bg #111155 solid_color
