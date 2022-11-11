@@ -39,6 +39,7 @@ input * {
 #output 'Hewlett Packard LA2405 CN410703B4' transform 270
 
 # Main monitors
+# command for getting outputs: swaymsg -t get_outputs
 # All monitor positions need to be explicit for any of them to be applied.
 output eDP-1 position 0 0
 
@@ -53,6 +54,10 @@ output * bg ~/datasrc/wallpaper-art/original/thomas_moran—gran_canal_venice_19
 #output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
 #output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
 #output * bg ~/datasrc/wallpaper-art/original/henri-paul_motte—cardinal_richelieu_at_the_siege_of_la_rochelle.png fill
+
+# command to switch wallpaper (ideally make this cycle somehow)
+#swaymsg output "DP-1" bg ~/datasrc/wallpaper-art/original/thomas_cole—the_course_of_empire_consummation_1836.png fill
+
 # My peripheral monitors:
 	# Portable
 	output 'Unknown 16T2W AQCLC9A000672' position 0 0
