@@ -1,0 +1,9 @@
+### Alacritty issues with colors disappearing
+#alias ssh='TERM="xterm-256color" ssh'
+#alias vim='TERM="xterm-256color" vim'
+
+## Wayland compatibility issues:
+#alias fsleyes='GDK_BACKEND=x11 fsleyes'
+
+## GPG agent issues
+export GPG_TTY=$(tty)
