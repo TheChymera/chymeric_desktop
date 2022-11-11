@@ -1,0 +1,7 @@
+## Disowning
+function sz() {
+        zathura "${1}" & disown
+}
+function smupdf() {
+        mupdf "${1}" & disown
+}

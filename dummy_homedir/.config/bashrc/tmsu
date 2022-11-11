@@ -1,0 +1,50 @@
+function tplay() {
+        # call with `whatever tags etc -s <id|time>` to sort by time or id in database, see `tmsu help files` for details.
+        tmsu files "vid ${@}" | mpv --playlist=-
+}
+
+## Tagging
+function timg() {
+        # call with `whatever tags etc -s <id|time>` to sort by time or id in database, see `tmsu help files` for details.
+        tmsu files "img ${@}" | imv
+}
+function trimg() {
+        tmsu files "${@} img" | shuf | imv
+}
+function tcount() {
+        for tag in $(tmsu tags); do echo ${tag}: $(tmsu files ${tag} -c); done | sort -t: -k 2 -n -r | column
+}
+function tagderivs() {
+        TAGS="$(tmsu tags -1 --name=never ${1} | xargs)"
+        echo "${TAGS}"
+        filename="${1%.*}"
+        echo "tmsu tag --tags=\"${TAGS}\" \"${filename}\"*.{JPG,jpg}"
+        tmsu tag --tags="${TAGS}" "${filename}"*.{JPG,jpg}
+}
+function dimv() {
+        filename="${1%.*}"
+        imv "${filename}"*.{JPG,jpg}
+}
+function tkind() {
+        IFS=$'\n'
+        declare -A imgmap
+        for name in "jpg" "JPG" "jpeg" "JPEG" "png" "PNG" "gif" "GIF" "bmp" "BMP" ; do
+                imgmap["$name"]=1
+        done
+        declare -A vidmap
+        for name in "avi" "AVI" "divx" "DIVX" "mov" "MOV" "mkv" "MKV" "mp4" "MP4" "mpg" "MPG" "rm" "RM" "wmv" "WMV" ; do
+                vidmap["$name"]=1
+        done
+        for i in $(tmsu files "${@}"); do
+                ext="${i##*.}"
+                if [[ ${imgmap["${ext}"]} ]] ; then
+                        echo "Running: \`tmsu tag \"${i}\" img\`"
+                        tmsu tag "${i}" "img"
+                elif [[ ${vidmap["${ext}"]} ]] ; then
+                        echo "Running: \`tmsu tag \"${i}\" vid\`"
+                        tmsu tag "${i}" "vid"
+                else
+                        echo "Could not determine file type for \`${i}\`"
+                fi
+        done
+}
