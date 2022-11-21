@@ -7,19 +7,18 @@ input * {
 	xkb_options "grp:win_space_toggle,compose:prsc"
 	# Edit this to change scroll speed:
 	scroll_factor 0.85
-	#scroll_factor 0.05
 }
 
 ### Input configuration
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+input "2:14:SynPS/2_Synaptics_TouchPad" {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
