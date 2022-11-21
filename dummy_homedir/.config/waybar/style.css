@@ -291,6 +291,10 @@ label:focus {
     border-top: 1px solid #304585;
     background-color: #000000;
 }
+#custom-weather.Lightsnow {
+    border-top: 1px dotted #60B0FF;
+    background-color: #000000;
+}
 #custom-weather.Mist {
     border-top: 1px solid #403540;
     background-color: #000000;
