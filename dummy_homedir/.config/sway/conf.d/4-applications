@@ -19,9 +19,8 @@ set $im telegram-desktop
 set $lab-im slack
 
 # Screen capture
-# For some reason these don't work with aliased commands from `.bashrc`:
 set $screenpic grim $(date +"Pictures/${HOSTNAME}_%Y-%m-%dT%H:%M:%S.png")
 set $screenpic-select grim -g "$(slurp)" $(date +"Pictures/${HOSTNAME}_%Y-%m-%dT%H:%M:%S.png")
-set $screenvid wf-recorder -a -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -t
-set $screenvid-select wf-recorder -a -g "$(slurp)" -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -t
-set $screenvid-kill killall wf-recorder --signal SIGINT
+set $screenvid quickscreenvid.sh -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -b '^alsa_(input\.pci-0000|output).*?$'
+set $screenvid-select quickscreenvid.sh -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -s -b '^alsa_(input\.pci-0000|output).*?$'
+set $screenvid-kill quickscreenvid_kill.sh
