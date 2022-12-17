@@ -3,5 +3,6 @@ alias playlist-ydl="youtube-dl --audio-format mp3 -x -i"
 
 ## Sway stuff:
 alias mywm='dbus-launch --exit-with-session -- sway -d 2> ${HOME}/.local/share/sway.log'
+alias pv='pipe-viewer'
 
 alias latestpackages='EIX_LIMIT=0 eix -I --format "<installedversions:DATESORT>" --pure-packages | sort -n'
