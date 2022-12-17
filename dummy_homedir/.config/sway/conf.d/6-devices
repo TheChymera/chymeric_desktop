@@ -43,19 +43,7 @@ input "2:14:SynPS/2_Synaptics_TouchPad" {
 output eDP-1 position 0 0
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-sunset_over_ischia_1857.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-the_dark_wood_1876.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_shishkin-haystacks_preobrazhenskoe_1890.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1881.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-shipping_along_the_crimean_coast_1872.png fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-crimean_coast_in_moonlight_1859.png fill
-output * bg ~/datasrc/wallpaper-art/original/thomas_moran—gran_canal_venice_1905.jpg fill
-#output * bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-calm_seas_1884.png fill
-#output * bg ~/datasrc/wallpaper-art/original/_ivan_aivazovsky-winter_landscape_1876.png fill
-#output * bg ~/datasrc/wallpaper-art/original/henri-paul_motte—cardinal_richelieu_at_the_siege_of_la_rochelle.png fill
-
-# command to switch wallpaper (ideally make this cycle somehow)
-#swaymsg output "DP-1" bg ~/datasrc/wallpaper-art/original/thomas_cole—the_course_of_empire_consummation_1836.png fill
+output * bg ~/datasrc/wallpaper-art/original/albert_bierstadt—looking_down_at_yosemite_valley_1865.jpg fill
 
 # My peripheral monitors:
 	# Portable
@@ -67,10 +55,3 @@ output * bg ~/datasrc/wallpaper-art/original/thomas_moran—gran_canal_venice_19
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/thomas_moran—a_passing_shower_in_the_yellowstone_canyon_1930.jpg fill
-	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/thomas_moran—grand_canyon_of_the_yellowstone_c1900.png fill
-	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/ivan_aivazovsky-winter_landscape_1876.png fill
-	#output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/caspar_david_friedrich-ships_in_the_harbour_of_greifswald_c1819.png fill
-
-
-#output * bg #111155 solid_color
-
