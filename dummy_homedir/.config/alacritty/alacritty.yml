@@ -39,8 +39,8 @@ key_bindings:
 #someone told me to put this here instead of in .bashrc but if fucked up my colors for e.g. `eix` output
 #env:
 #  TERM: xterm-256color
-#font:
-#  normal:
-#    family: JetBrains Mono NL
-#    #family: Hermit
-#    style: medium, regular
+font:
+  normal:
+    family: DejaVuSansMono
+    #family: Hermit
+    style: medium, regular
