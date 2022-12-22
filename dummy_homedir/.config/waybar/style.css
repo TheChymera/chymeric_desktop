@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: 'Droid Sans Mono', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'DejaVuSansMono', 'LiberationMono', 'JetBrainsMono', 'FiraCode', Roboto, sans-serif;
     font-size: 14px;
     min-height: 0;
 }
