@@ -8,6 +8,7 @@ set $Neuroimaging GDK_BACKEND=x11 fsleyes
 # Internet
 set $downloads transmission-gtk
 set $web firefox || firefox-bin
+set $lweb links
 
 # Graphics
 set $modelling blender
