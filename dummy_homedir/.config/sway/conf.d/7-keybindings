@@ -1,5 +1,6 @@
 # Terminal
 bindsym $mod+t exec $term
+bindsym $mod+z exec $term2
 bindsym $mod+q exec $term --class quick_command
 
 # Science

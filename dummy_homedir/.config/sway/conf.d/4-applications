@@ -1,5 +1,6 @@
 # Terminal emulator
 set $term alacritty
+set $term2 kitty
 
 # Science
 set $neuroimaging MRIcroGL
