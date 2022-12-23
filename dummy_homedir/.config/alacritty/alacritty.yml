@@ -60,7 +60,9 @@ key_bindings:
   #- { key: 47,       mods: Shift|Control,         action: Paste,           }
 
 #someone told me to put this here instead of in .bashrc but if fucked up my colors for e.g. `eix` output
+#apparently this works now, if alacritty starts behaving weird, delete the next 3 lines
 env:
+  #TERM: xterm-alacritty
   TERM: xterm-256color
 
 # replace monospace with DejaVuSansMono if it starts picking trash
