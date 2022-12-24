@@ -24,7 +24,7 @@ bindsym $mod+c exec $term -e sh -c "weechat;sh"
 bindsym $mod+Shift+t exec $term -e sh -c "toxic;sh"
 
 # Mail
-bindsym $mod+Shift+e exec $term -e sh -c "neomutt"
+bindsym $mod+Shift+e exec $term2 -e sh -c "neomutt;sh"
 
 # Screen capture
 bindsym $mod+Shift+s exec $screenpic
