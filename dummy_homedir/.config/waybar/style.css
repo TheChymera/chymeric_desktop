@@ -3,6 +3,7 @@
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: 'JetBrainsMono', 'DejaVuSansMono', 'LiberationMono', 'FiraCode', Roboto, sans-serif;
+    /*font-family: 'DejaVuSansMono', 'LiberationMono', 'FiraCode', Roboto, sans-serif;*/
     font-size: 15px;
     min-height: 0;
 }
@@ -10,8 +11,6 @@
 window#waybar {
     background-color: #000000;
     color: #a3a3a3;
-    transition-property: background-color;
-    transition-duration: .5s;
 }
 
 window#waybar.hidden {
@@ -37,23 +36,28 @@ window#waybar.chromium {
 }
 
 #workspaces button {
-    padding: 0 5 0 4px;
+    /* Use box-shadow instead of border so the text isn't offset */
+    padding: 0 5 0 5px;
     border-top: 1px solid #000000;
     border-bottom: 0px;
     background-color: transparent;
     color: #a3a3a3;
-    /* Use box-shadow instead of border so the text isn't offset */
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px #a3a3a3;
+    /* A bit dodgy https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    color: #a3a3a3;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    transition-duration: 0s;
+    transition-property: background-color;
+    background: #454545;
+    border-top: 1px solid #454545;
 }
 
 #workspaces button.focused {
     border-top: 1px solid #a3a3a3;
-    background-color: #606060;
+    background-color: #656565;
     color: #dddddd;
 }
 
@@ -62,8 +66,15 @@ window#waybar.chromium {
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    /* Sets the style of e.g. the “resize” notification. */
+    font-style: inherit;
+    color: #a3a3a3;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    transition-duration: 0s;
+    transition-property: background-color;
+    background: #656565;
+    border-top: 1px solid #f03322;
 }
 
 #clock,
