@@ -1,0 +1,2 @@
+## LabbookDB
+export LDB_PATH="~/syncdata/meta.db"
