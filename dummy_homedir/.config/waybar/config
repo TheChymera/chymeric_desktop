@@ -72,6 +72,12 @@
 	"sway/window": {
 		"max-length": 80,
 		"tooltip": false,
+		"rewrite": {
+                	"(.*) — Mozilla Firefox": " $1",
+                	"(.*) - Inkscape": " $1",
+                	//"(.*) - Inkscape": " $1",
+                	//"(.*) - Inkscape": " $1",
+                },
 	},
 	// more customization https://awesomeopensource.com/project/chubin/wttr.in
 	"custom/weather": {
