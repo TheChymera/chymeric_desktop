@@ -75,7 +75,7 @@
 		"rewrite": {
 			"(.*) — Mozilla Firefox": " $1",
 			"(.*) - Inkscape": " $1",
-			"(.*) /run/media/chymera/(.*)": "$1 /$2",
+			//"(.*) /run/media/chymera[/]*(.*)": "$1  $2",
 			//"(.*) - Inkscape": " $1",
 			//"(.*) - Inkscape": " $1",
 		},
