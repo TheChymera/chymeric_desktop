@@ -1,1 +1,3 @@
-PS1="\[\033]0;[${HOSTNAME%%host*}] \w\007\]\[\033[01;32m\][${HOSTNAME%%host*}]\[\033[01;34m\]\w ❱\[\033[00m\] "
+PS1='\[\033]0;[$(echo "\h" | sed "s/host//")] $(echo "\w" | sed "s:/run/media/\u/*: :")\007\]'
+PS1+='\[\033[01;32m\][$(echo "\h" | sed "s/host//")]\[\033[01;34m\]'
+PS1+='$(echo "\w" | sed "s:/run/media/\u/*: :") ❱\[\033[00m\] '
