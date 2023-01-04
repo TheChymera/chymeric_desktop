@@ -75,7 +75,8 @@
 		"rewrite": {
 			"(.*) — Mozilla Firefox": " $1",
 			"(.*) - Inkscape": " $1",
-			"(.*) /run/media/chymera/(.*)": "$1 /$2",
+			// We do this in bashrc, but also need it for kitty, since it does not take the terminal title up from PS1
+			"(.*)/run/media/chymera/*(.*)": "$1  $2",
 			//"(.*) - Inkscape": " $1",
 			//"(.*) - Inkscape": " $1",
 		},
