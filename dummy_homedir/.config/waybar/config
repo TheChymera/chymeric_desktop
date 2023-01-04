@@ -73,11 +73,12 @@
 		"max-length": 80,
 		"tooltip": false,
 		"rewrite": {
-                	"(.*) — Mozilla Firefox": " $1",
-                	"(.*) - Inkscape": " $1",
-                	//"(.*) - Inkscape": " $1",
-                	//"(.*) - Inkscape": " $1",
-                },
+			"(.*) — Mozilla Firefox": " $1",
+			"(.*) - Inkscape": " $1",
+			"(.*) /run/media/chymera/(.*)": "$1 /$2",
+			//"(.*) - Inkscape": " $1",
+			//"(.*) - Inkscape": " $1",
+		},
 	},
 	// more customization https://awesomeopensource.com/project/chubin/wttr.in
 	"custom/weather": {
