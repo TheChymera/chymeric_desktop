@@ -114,7 +114,7 @@
 			"playing": ""
 		},
 		"tooltip-format": "{{elapsedTime:%H:%M:%S}%%:*}/{totalTime:%H:%M:%S}",
-		"tooltip-format-disconnected": "MPD Disconnected",
+		"tooltip-format-disconnected": "",
 		"on-click": "mpc toggle",
 		"on-click-right" : "mpc next",
 		"on-click-middle" : "mpc prev"
