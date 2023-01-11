@@ -69,11 +69,9 @@ window#waybar.chromium {
     /* Sets the style of e.g. the “resize” notification. */
     font-style: inherit;
     color: #a3a3a3;
-    box-shadow: inherit;
-    text-shadow: inherit;
     transition-duration: 0s;
     transition-property: background-color;
-    background: #656565;
+    background: #000000;
     border-top: 1px solid #f03322;
 }
 
