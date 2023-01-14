@@ -53,7 +53,7 @@ bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. 
 	bindsym shift+tab workspace next
 
 	# Move focused container to workspace
-	bindsym $mod+Ctrl+0xa7 move container to workspace 0
+	bindsym $mod+Ctrl+0x100017f move container to workspace 0
 	bindsym $mod+Ctrl+1 move container to workspace 1
 	bindsym $mod+Ctrl+2 move container to workspace 2
 	bindsym $mod+Ctrl+3 move container to workspace 3
