@@ -211,6 +211,7 @@
 		"format-charging": "{capacity}% ",
 		// "format-plugged": "{capacity}% ",
 		"format-plugged": "",
+		"format-time":"{H}:{M}",
 		"format-alt": "{time} {icon}",
 		"format-icons": ["", "", "", "", ""],
 		// The following sometimes is registered as the status when fully charged, setting it to be identical with full.
