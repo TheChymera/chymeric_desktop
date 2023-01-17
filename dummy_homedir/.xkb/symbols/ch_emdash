@@ -14,6 +14,8 @@ xkb_symbols "myCH" {
 	key <AC10> { [ U00F6, U00D6, U00EE, U00CE ] }; #  öÖ îÎ
 	key <AC11> { [ U00E4, U00C4, U007B, U00E0 ] }; #  äÄ {à
 	key <AC12> { [ U0024, U20AC, U007D, U00E8 ] }; #  $€ }è
+	key <AB03> { [ U0063, U0043, U00E7, U00C7 ] }; #  cC çÇ
+	key <AB07> { [ U006D, U004D, U03BC, U039C ] }; #  mM μΜ
 	key <AB09> { [ U002E, U003A, U22C5, U00E9 ] }; #  .: ⋅é
 	key <AB10> { [ U002D, U005F, U0219, U0218 ] }; #  -_ șȘ
 };
