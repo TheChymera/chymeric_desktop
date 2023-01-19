@@ -250,10 +250,10 @@ label:focus {
 #custom-recording {
     margin-left: 0px;
     padding-left: 2px;
-    border-top: 1px solid #000000;
+    border-top: 0px solid #000000;
     background-color: #000000;
     color: #d03020;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
 }
 
 #custom-events {
