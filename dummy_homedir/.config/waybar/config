@@ -96,7 +96,7 @@
 		"format-stopped": "Stopped",
 		"unknown-tag": "N/A",
 		"interval": 2,
-		"max-length": 35,
+		"max-length": 32,
 		"consume-icons": {
 			"on": " "
 		},
@@ -175,7 +175,7 @@
 	},
 	"memory": {
 		//"format": "{}% ",
-		"format": "{}",
+		"format": "{percentage}",
 		"tooltip": true,
 		"interval": 15,
 			"states": {
