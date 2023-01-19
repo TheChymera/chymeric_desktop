@@ -11,6 +11,7 @@
 		"battery",
 		"sway/workspaces",
 		"sway/mode",
+		"custom/recording",
 		],
 	"modules-center": ["sway/window"],
 	//"modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "custom/weather", "battery", "battery#bat2", "clock", "tray"],
@@ -137,6 +138,14 @@
 		"format": "{:%Y-%m-%d %a %H:%M}",
 		"on-click": "alacritty --class pulsemixer_float -e sh -c \"khal interactive\""
 	},
+	"custom/recording": {
+		"format": "{} ",
+		"tooltip": false,
+		"interval": 1,
+		"min-length": "",
+		"exec": "waybar-tooltip-recording",
+		"return-type": "string"
+	},
 	"custom/events": {
 		"format": "{} ",
 		"tooltip": true,
@@ -152,33 +161,33 @@
 		//"format": "{usage}% ",
 		"format": "{usage}",
 		"tooltip": true,
-	"interval": 15,
-		"states": {
-			 "negligible": 0,
-			 "lowest": 15,
-			 "low": 30,
-			 "moderate": 45,
-			 "high": 60,
-			 "higher": 75,
-			 "warning": 85,
-			 "critical": 95
-		}
+		"interval": 15,
+			"states": {
+				 "negligible": 0,
+				 "lowest": 15,
+				 "low": 30,
+				 "moderate": 45,
+				 "high": 60,
+				 "higher": 75,
+				 "warning": 85,
+				 "critical": 95
+			}
 	},
 	"memory": {
 		//"format": "{}% ",
 		"format": "{}",
 		"tooltip": true,
-	"interval": 15,
-		"states": {
-			 "negligible": 0,
-			 "lowest": 15,
-			 "low": 30,
-			 "moderate": 45,
-			 "high": 60,
-			 "higher": 75,
-			 "warning": 85,
-			 "critical": 95
-		}
+		"interval": 15,
+			"states": {
+				 "negligible": 0,
+				 "lowest": 15,
+				 "low": 30,
+				 "moderate": 45,
+				 "high": 60,
+				 "higher": 75,
+				 "warning": 85,
+				 "critical": 95
+			}
 	},
 	"temperature": {
 		// "thermal-zone": 2,
