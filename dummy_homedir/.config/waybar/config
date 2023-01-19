@@ -5,7 +5,6 @@
 	// "layer": "top", // Waybar at top layer
 	// "position": "bottom", // Waybar position (top|bottom|left|right)
 	"height": 25, // Waybar height (to be removed for auto height)
-	// "width": 1280, // Waybar width
 	// Choose the order of the modules
 	"modules-left": [
 		"battery",
@@ -14,7 +13,6 @@
 		"custom/recording",
 		],
 	"modules-center": ["sway/window"],
-	//"modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "custom/weather", "battery", "battery#bat2", "clock", "tray"],
 	"modules-right": [
 		"mpd",
 		"pulseaudio",
@@ -127,10 +125,6 @@
 			"deactivated": ""
 		}
 	},
-	"tray": {
-		// "icon-size": 21,
-		"spacing": 10
-	},
 	"clock": {
 		// "timezone": "America/New_York",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -237,7 +231,7 @@
 	},
 	"pulseaudio": {
 		// "scroll-step": 1, // %, can be a float
-		"format": "{volume}% {icon}",
+		"format": "{volume} {icon}",
 		//"format-bluetooth": "{volume}% {icon}",
 		//"format-bluetooth-muted": " {icon}",
 		"format-muted": " {format_source}",
@@ -252,16 +246,4 @@
 		},
 		"on-click": "pavucontrol"
 	},
-	"custom/media": {
-		"format": "{icon} {}",
-		"return-type": "json",
-		"max-length": 40,
-		"format-icons": {
-			"spotify": "",
-			"default": "🎜"
-		},
-		"escape": true,
-		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-		// "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-	}
 }
