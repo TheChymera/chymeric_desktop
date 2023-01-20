@@ -10,6 +10,7 @@
 		"battery",
 		"sway/workspaces",
 		"sway/mode",
+		"custom/camera",
 		"custom/recording",
 		],
 	"modules-center": ["sway/window"],
@@ -132,12 +133,22 @@
 		"format": "{:%Y-%m-%d %a %H:%M}",
 		"on-click": "alacritty --class pulsemixer_float -e sh -c \"khal interactive\""
 	},
+	"custom/camera": {
+		"format": "{} ",
+		"tooltip": false,
+		"interval": 1,
+		"min-length": "",
+		"exec": "waybar-tooltip-checkapp -i  gphoto2",
+		"return-type": "string",
+		"on-click": "mpv av://v4l2:/dev/video0 --profile=low-latency",
+		"on-middle-click": "stopcam",
+	},
 	"custom/recording": {
 		"format": "{} ",
 		"tooltip": false,
 		"interval": 1,
 		"min-length": "",
-		"exec": "waybar-tooltip-recording",
+		"exec": "waybar-tooltip-checkapp -i ⬤ wf-recorder",
 		"return-type": "string"
 	},
 	"custom/events": {
