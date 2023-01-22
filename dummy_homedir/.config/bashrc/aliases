@@ -7,6 +7,3 @@ alias pv='pipe-viewer'
 
 alias latestpackages='EIX_LIMIT=0 eix -I --format "<installedversions:DATESORT>" --pure-packages | sort -n'
 
-## Convenience stuff:
-
-alias uumount='cd ~ && umount ${1}'
