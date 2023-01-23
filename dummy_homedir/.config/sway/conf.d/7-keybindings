@@ -31,7 +31,13 @@ bindsym $mod+Shift+s exec $screenpic
 bindsym $mod+s exec $screenpic-select
 bindsym $mod+Ctrl+Shift+s exec $screenvid
 bindsym $mod+Ctrl+s exec $screenvid-select
-bindsym $mod+Ctrl+x exec $screenvid-kill
+bindsym $mod+Alt+s exec $screenvid-kill
+
+# Camera control
+bindsym $mod+Shift+a exec $startcam
+bindsym $mod+Alt+a exec $stopcam
+bindsym $mod+Ctrl+a exec $showcam
+
 
 # Idling
 bindsym $mod+Shift+l exec swaylock

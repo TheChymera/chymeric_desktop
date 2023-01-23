@@ -26,3 +26,9 @@ set $screenpic-select grim -g "$(slurp)" $(date +"Pictures/${HOSTNAME}_%Y-%m-%dT
 set $screenvid quickscreenvid.sh -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -b '^alsa_(input\.pci-0000|output).*?$'
 set $screenvid-select quickscreenvid.sh -f $(date +"/home/$(whoami)/Videos/cameras/screenvid_${HOSTNAME}/%Y-%m-%dT%H:%M:%S.mp4") -s -b '^alsa_(input\.pci-0000|output).*?$'
 set $screenvid-kill quickscreenvid_kill.sh
+
+# Camera control
+set $startcam quickdigitalcamera_start
+set $showcam quickdigitalcamera_show
+set $stopcam quickdigitalcamera_stop
+
