@@ -12,3 +12,4 @@
 <Multi_key> <r><m> : "/run/media/chymera/"
 <Multi_key> <e><p> : "/etc/portage/"
 <Multi_key> <v><t><p> : "/var/tmp/portage/"
+<Multi_key> <l><s> : "~/.local/share/"
