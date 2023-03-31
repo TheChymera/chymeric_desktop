@@ -68,7 +68,7 @@ env:
 # replace monospace with DejaVuSansMono if it starts picking trash
 font:
   normal:
-    family: monospace
+    family: DejaVuSansMono
     style: Regular
 
   bold:
