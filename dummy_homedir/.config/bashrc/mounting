@@ -1,0 +1,3 @@
+function bumount() {
+	udisksctl unmount -b $(findmnt -n -o SOURCE --target "${1}")
+}
