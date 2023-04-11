@@ -9,7 +9,9 @@ else
 	DISPLAY_NAME="${1}"
 fi
 
-for i in ~/datasrc/wallpaper-art/original/*jpg; do
+#for i in ~/datasrc/wallpaper-art/original/*jpg; do
+echo "Use this script like \`./cycle_backgrounds.sh /path/to/candidates/*substring*\`"
+for i in ${*}; do
 	echo $i
 	swaymsg output "DP-1" bg ${i} fill
 	read key <&1
