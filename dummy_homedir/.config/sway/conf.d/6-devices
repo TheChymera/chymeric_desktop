@@ -27,24 +27,18 @@ input "2:14:SynPS/2_Synaptics_TouchPad" {
 #output HDMI-A-2 mode --custom 2560x1440
 #output HDMI-A-2 mode 2560x1440
 
-### Output configuration
-#
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-
 #output 'Hewlett Packard LA2405 CN410703B4' transform 270
 
 # Main monitors
 # command for getting outputs: swaymsg -t get_outputs
 # All monitor positions need to be explicit for any of them to be applied.
-output eDP-1 position 0 0
+# The x and y positions refer to the upper left corner with x incrementing to the left and y incrementing down.
+output eDP-1 pos 0 0
+output 'Japan Display Inc. 0x422A Unknown' scale 2
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/datasrc/wallpaper-art/original/albert_bierstadt—looking_down_at_yosemite_valley_1865.jpg fill
+#output * bg ~/datasrc/wallpaper-art/original/albert_bierstadt—looking_down_at_yosemite_valley_1865.jpg fill
+output * bg /home/chymera/datasrc/wallpaper-art/original/albert_bierstadt—lake_lucerne_1858.jpg fill
 
 # My peripheral monitors:
 	# Portable
@@ -52,6 +46,8 @@ output * bg ~/datasrc/wallpaper-art/original/albert_bierstadt—looking_down_at_
 	# DPBS lecture hall
 	output 'Unknown Crestron 0x00000000' res 1920x1200
 	# Office
+	output 'Samsung Electric Company SAMSUNG 0x00000F00' pos 0 -1080
+	output 'Samsung Electric Company SAMSUNG 0x00000F00' res 1920x1080
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' transform 270
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
