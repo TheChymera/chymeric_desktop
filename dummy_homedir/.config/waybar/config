@@ -143,7 +143,6 @@
 		"exec": "cat /tmp/ualarmer",
 		"return-type": "string",
 		"on-click": "kill $(ps aux | ag ualarm | ag -v ag | awk '{print $2}'); rm /tmp/ualarmer",
-		"on-middle-click": "stopcam",
 	},
 	"custom/camera": {
 		"format": "{} ",
