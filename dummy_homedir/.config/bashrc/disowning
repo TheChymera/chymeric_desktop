@@ -1,4 +1,7 @@
 ## Disowning
+function sgimp() {
+        gimp "${1}" & disown
+}
 function sz() {
         zathura "${1}" & disown
 }
