@@ -1,0 +1,68 @@
+live_config_reload = true
+
+[colors.bright]
+black = "0x928374"
+blue = "0x076678"
+cyan = "0x427b58"
+green = "0x559908"
+magenta = "0x8f3f71"
+red = "0xbb1122"
+white = "0x3c3836"
+yellow = "0xb57614"
+
+[colors.normal]
+black = "0x222222"
+blue = "0x458588"
+cyan = "0x689d6a"
+green = "0x98971a"
+magenta = "0xb16286"
+red = "0xcc221d"
+white = "0x7c6f64"
+yellow = "0xd79921"
+
+[colors.primary]
+background = "0xeeeae5"
+foreground = "0x333333"
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.normal]
+family = "DejaVuSansMono"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = 2
+mods = "Control | Shift"
+
+[mouse]
+hide_when_typing = false
+
+[window]
+dynamic_title = true
+
+[window.padding]
+x = 5
+y = 5
