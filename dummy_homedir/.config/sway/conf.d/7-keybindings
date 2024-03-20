@@ -23,6 +23,9 @@ bindsym $mod+Shift+i exec $lab-im
 bindsym $mod+c exec $term -e sh -c "weechat;sh"
 bindsym $mod+Shift+t exec $term -e sh -c "toxic;sh"
 
+#CLI
+bindsym $mod+j exec wl-copy ""
+
 # Mail
 bindsym $mod+Shift+e exec $term2 -e sh -c "neomutt;sh"
 
