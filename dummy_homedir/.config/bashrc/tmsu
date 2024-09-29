@@ -6,10 +6,10 @@ function tplay() {
 ## Tagging
 function timg() {
         # call with `whatever tags etc -s <id|time>` to sort by time or id in database, see `tmsu help files` for details.
-        tmsu files "img ${@}" | imv
+        tmsu files "${@}" | grep -E "(\.gif|\.GIF|\.jpeg|\.JPEG|\.jpg|\.JPG|\.png|\.PNG)$" | imv
 }
 function trimg() {
-        tmsu files "${@} img" | shuf | imv
+        tmsu files "${@}" | grep -E "(\.gif|\.GIF|\.jpeg|\.JPEG|\.jpg|\.JPG|\.png|\.PNG)$" | shuf | imv
 }
 function tcount() {
         for tag in $(tmsu tags); do echo ${tag}: $(tmsu files ${tag} -c); done | sort -t: -k 2 -n -r | column
