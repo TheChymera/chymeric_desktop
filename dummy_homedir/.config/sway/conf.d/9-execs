@@ -7,7 +7,8 @@ exec mpris-proxy
 exec dbus-launch
 # disk auto-mounting
 exec udiskie
-exec wlsunset -l 43.7 -L -72.2 -t 3700 -T 6200 -d 5400 & disown
+#exec wlsunset -l 43.7 -L -72.2 -t 3700 -T 6200 -d 5400 & disown
+exec wlsunset -l 44.4 -L -26.1 -t 3700 -T 6200 -d 5400 & disown
 exec mako
 exec ~/.config/sway/record_dbus_address.sh
 #exec autossh -M 0 mediahost
