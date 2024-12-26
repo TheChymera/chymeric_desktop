@@ -55,10 +55,4 @@ bindsym $mod+Shift+m exec $term -e sh -c "ncmpcpp;sh"
 	bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 	bindsym XF86AudioMute exec amixer set Master toggle
 
-	# find keys with `libinput debug-events --show-keycodes` — might be hit and miss
-	bindsym XF86AudioPrev exec mpc prev
-	bindsym XF86AudioNext exec mpc next
-	bindsym XF86AudioPlay exec mpc toggle
-	#bindsym xf86AudioPlayPause exec mpc toggle
-	#bindcode 164 exec mpc toggle
 
