@@ -52,3 +52,4 @@ output * bg /home/chymera/datasrc/wallpaper-art/original/albert_bierstadt—lake
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' pos -1080 -920
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' res 1920x1080
 	output 'Dell Inc. DELL U2713HM 7JNY54ARAD3S' bg ~/datasrc/wallpaper-art/original/thomas_moran—a_passing_shower_in_the_yellowstone_canyon_1930.jpg fill
+	output 'Samsung Electric Company SAMSUNG 0x01000E00' bg ~/datasrc/wallpaper-art/original/thomas_moran—a_passing_shower_in_the_yellowstone_canyon_1930.jpg fill
