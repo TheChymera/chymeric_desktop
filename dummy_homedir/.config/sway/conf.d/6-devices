@@ -37,8 +37,7 @@ output eDP-1 pos 0 0
 output 'Japan Display Inc. 0x422A Unknown' scale 2
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg ~/datasrc/wallpaper-art/original/albert_bierstadt—looking_down_at_yosemite_valley_1865.jpg fill
-output * bg /home/chymera/datasrc/wallpaper-art/original/albert_bierstadt—lake_lucerne_1858.jpg fill
+output '*' bg /home/chymera/datasrc/wallpaper-art/original/albert_bierstadt—lake_lucerne_1858.jpg fill
 
 # My peripheral monitors:
 	# Portable
