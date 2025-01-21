@@ -163,6 +163,7 @@
 		"return-type": "string"
 	},
 	"custom/events": {
+		// for this to work on a new machine you will need to first run `khal configure`
 		"format": "{} ",
 		"tooltip": true,
 		"interval": 120,
