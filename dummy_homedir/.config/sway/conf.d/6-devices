@@ -10,6 +10,11 @@ input * {
 	scroll_factor 0.85
 }
 
+input "6551:9267:mini_keyboard" {
+	xkb_layout "us"
+	scroll_factor 0.85
+}
+
 ### Input configuration
 #
 # Example configuration:
