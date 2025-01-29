@@ -27,10 +27,14 @@ bindsym $mod+Shift+t exec $term -e sh -c "toxic;sh"
 bindsym $mod+j exec wl-copy ""
 
 # Mail
+bindsym $mod+Shift exec $term -e sh -c "neomutt"
 bindsym $mod+Shift+e exec $term2 -e sh -c "neomutt;sh"
 
-# Ranger
-bindsym exec XF86HomePage $term -e sh -c "ranger;sh"
+# Ranger shorthand
+bindsym XF86HomePage exec $term -e sh -c "ranger"
+
+# Music shorthand
+bindsym Menu exec $term -e sh -c "ncmpcpp"
 
 # Screen capture
 bindsym $mod+Shift+s exec $screenpic
