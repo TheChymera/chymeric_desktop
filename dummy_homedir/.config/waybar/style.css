@@ -37,7 +37,7 @@ window#waybar.chromium {
 
 #workspaces button {
     /* Use box-shadow instead of border so the text isn't offset */
-    padding: 0 5 0 5px;
+    padding: 0px 5px 0px 5px;
     border-top: 1px solid #000000;
     border-bottom: 0px;
     background-color: transparent;
@@ -118,7 +118,7 @@ window#waybar.chromium {
 }
 
 #battery {
-    padding: 0 5 0 4px;
+    padding: 0px 5px 0px 4px;
     border-top: 2px solid #000000;
     border-bottom: 0px;
     background-color: transparent;
