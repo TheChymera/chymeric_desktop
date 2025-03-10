@@ -144,7 +144,7 @@
 		"tooltip": false,
 		"interval": 1,
 		"min-length": "0",
-		"exec": "cat /tmp/ular",
+		"exec": "[ -f /tmp/ular ] && cat /tmp/ular",
 		"return-type": "string",
 		"on-click": "kill $(ps aux | rg 'bash /usr/bin/ular' | rg -v rg | awk '{print $2}'); rm /tmp/ular",
 	},
