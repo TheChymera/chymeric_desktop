@@ -17,7 +17,7 @@ set $graphic gimp
 set $paths inkscape
 
 # Messaging
-set $im telegram-desktop
+set $im Telegram
 set $lab-im slack
 
 # Screen capture
