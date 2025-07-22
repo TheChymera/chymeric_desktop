@@ -1,5 +1,7 @@
-set spell spelllang=en_gb
+let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
+let g:lexical#spelllang = ['en_gb','ro', 'de_de']
 
+set spell spelllang=en_gb
 highlight BadWhitespace ctermbg=red guibg=darkred
 :match BadWhitespace /\s\+\%#\@<!$/
 
