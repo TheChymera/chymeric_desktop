@@ -3,7 +3,7 @@ function sgimp() {
         gimp "${1}" & disown
 }
 function sz() {
-        zathura "${1}" & disown
+        zathura-full "${1}" & disown
 }
 function smupdf() {
         mupdf "${1}" & disown
