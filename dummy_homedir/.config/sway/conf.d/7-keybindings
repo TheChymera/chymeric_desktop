@@ -58,8 +58,12 @@ bindsym $mod+Shift+m exec $term -e sh -c "ncmpcpp;sh"
 
 # Volume control
 # for more fun with multimedia keys use wev ( gui-apps/wev ) to get codes of the type seen below
-	bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-	bindsym XF86AudioLowerVolume exec amixer set Master 5%-
-	bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+# alsamixer (old)
+#bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+#bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+#bindsym XF86AudioMute exec amixer set Master toggle
 
 
