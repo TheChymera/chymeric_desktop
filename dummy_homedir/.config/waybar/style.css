@@ -243,8 +243,9 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    border-top: 1px solid #991111;
+    background-color: #000000;
+    color: #3f3f3f;
 }
 
 #custom-ualarmer {
